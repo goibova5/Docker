@@ -49,4 +49,26 @@ docker rm -v *ID контейнера*
 ```
 docker rmi *ID контейнера*
 ```
+## Задание 2
 
+Установливаем nginx:
+```
+apt-get update
+apt-get install nginx -y
+```
+Далее нужно запустить nginx:
+```
+systemctl enabled --now nginx
+```
+Запускаем его в docker:
+```
+docker pull nginx
+```
+Запускаем контейнер на 80 порте:
+```
+docker run --rm -d --anme nginx -v /data/app:/var/www/html -p 0.0.0.0:80:80 nginx
+```
+ И в конце проверяем запущенные контейнеры:
+ ```
+docker ps
+```
