@@ -89,6 +89,26 @@ docker ps
 
 ------
 
+Запускаем интерактивную оболочку в контейнере Docker с помощью docker exec с флагами -i и -t:
+```
+docker exec -it nginx /bin/bash
+```
+Чтобы начать их редактировать нужно будет заново скачать программу, которой мы пользуемся для редака файлов, а именно ```nano``` или  ```vim```:
+```
+apt-get update
+apt-get install -y nano
+```
+
+Далее необходимо открыть файл index.html:
+
+```
+nano /usr/share/nginx/html/index.html
+```
+
+В нём меняем заголовок и, по желанию, описание:
+
+![image](https://github.com/goibova5/Docker/assets/148867942/e8216d88-e78b-4841-8f88-da9d316c9c12)
+
 # Задание 4
 
 1.	Установить виртуальную машину на ALT Linux.
