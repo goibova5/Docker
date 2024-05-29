@@ -109,6 +109,12 @@ nano /usr/share/nginx/html/index.html
 
 ![image](https://github.com/goibova5/Docker/assets/148867942/e8216d88-e78b-4841-8f88-da9d316c9c12)
 
+Залание выполнено!
+
+
+![image](https://github.com/goibova5/Docker/assets/148867942/22e3613c-4ed8-49a4-83bb-42fb4b8d7458)
+
+
 # Задание 4
 
 1.	Установить виртуальную машину на ALT Linux.
